@@ -4,7 +4,7 @@ app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function($scope, $h
     $.ajax({
         url: 'http://trapster.tk/articles/get/all/api123test567key0',
         method: 'get',
-        dataType: 'jsonp'
+        dataType: 'json'
     }).done(function(data) {
         console.log(data);
     });
