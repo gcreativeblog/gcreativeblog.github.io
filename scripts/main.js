@@ -1,13 +1,10 @@
 var app = angular.module('gcreativeApp', ["ui.tinymce", "ngSanitize", "ngRoute"]);
 
 app.controller('mainCtrl', ['$scope', '$http', '$rootScope', function($scope, $http, $rootScope) {
-    $.ajax({
-        url: 'http://trapster.tk/articles/get/all/api123test567key0',
-        method: 'get',
-        dataType: 'json'
-    }).done(function(data) {
-        console.log(data);
-    });
+    $http.jsonp('http://trapster.tk/articles/get/all/api123test567key0')
+        .then(function(res) {
+            console.log(res);
+        }, function(res) {});
 }]);
 
 app.controller('articlesCtrl', ['$scope', '$routeParams', '$rootScope', function($scope, $routeParams, $rootScope) {
