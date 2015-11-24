@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="gcreativeApp">
+    <head>
+        <title>Get Creative</title>
+        <meta charset="utf-8">
+        <!--<script src="libs/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>-->
+        <!--<script src="libs/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>-->
+        <!--<link rel="stylesheet" href="libs/syntaxhighlighter_3.0.83/styles/shCoreDefault.css">-->
+        <!--<link rel="stylesheet" href="libs/syntaxhighlighter_3.0.83/styles/shThemeDefault.css">-->
+        <link rel="stylesheet" href="stylesheets/main.css">
+    </head>
+    <body>
+        <div class="page-wrapper" ng-controller="mainCtrl">
+            <header class="header">
+                <div class="wrapper">
+                    <h1><a href="#/">Get Creative</a></h1>
+                </div>
+            </header>
+            <div class="content-wrapper" ng-view></div>
+            {{data}}
+        </div>
+
+        <script src="bower_components/tinymce-dist/tinymce.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+        <script src="scripts/main.js"></script>
+        <script>
+            // SyntaxHighlighter.all();
+        </script>
+    </body>
+</html>
